@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.header {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.mod {margin: 25px 0}
+.mod > .title {
+  font-size:120%;
+}
+
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+.center {
+  text-align: center !important;
+}
+
+table .number {
+  text-align: right !important;
+  white-space: nowrap
+}
+table .date,
+table .type,
+table .id {
+  text-align: center !important;
+  white-space: nowrap
+}
+.page{
+  background: #fff;
+  padding: 0 25px 25px;
+  min-height:360px
+}
+.ant-breadcrumb{
+  text-align: left;
+  padding: 15px 0 15px;
+  margin-left: -25px;
+  margin-right: -25px;
+  background: #f0f2f5;
+}
+.anticon-home{
+  font-size: 120%;
+  margin-right: 5px;
+}
+.ant-form-item-control{
+  text-align: left;
+}
+.ant-form legend {
+  text-align: left;
+}
+.nav-icon{
+  font-size: 150%;
+  vertical-align: middle;
+}
+.color-red{color:#f60}
+.color-orange{color:#f09b4a}
+.color-blue{color:#6b9be9}
+.color-green{color:#51d1bf}
+#root, .ant-layout{height:100%}
