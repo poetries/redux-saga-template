@@ -24,7 +24,8 @@ function* fetchPoetrySaga(){
     // === 写法二====
   while(true){
       // 当dispatch({type:FETCH_POETRY_REQUEST})的时候被这里监听 执行对应的请求
-    const {user,age} =  yield take(actionTypes.FETCH_POETRY_REQUEST)
+    const {payload:{user,age}} =  yield take(actionTypes.FETCH_POETRY_REQUEST)
+    console.log(user,age)
     try{
          const data =  yield call(api.get({
              url:'/mock/5b7fd63f719c7b7241f4e2fa/tangshi/tang-shi'
